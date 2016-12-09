@@ -1,0 +1,161 @@
+#include "gcp.pp"
+
+graph G {
+    graph [
+        fontname = "Roboto",
+        fontsize = 20,
+        fontcolor = "BLUE700",
+        label = "Google Cloud Platform Services Overview",
+        labelloc = "t",
+        labeljust = "l"
+        bgcolor = "GREY50",
+        splines = true
+    ];
+    node [fontname = "Roboto", fontsize = 10, fontcolor = "GREY900"];
+    edge [color = "GREY300"];
+
+    GCP [BOX_PARAMS, image="images/gcp-logo.svg", label=""]
+
+    Compute [BOX_PARAMS]
+    GCE COMPUTE_ENGINE()
+    GAE APP_ENGINE()
+    GKE CONTAINER_ENGINE()
+    GCR CONTAINER_REGISTRY()
+    CFN CLOUD_FUNCTIONS()
+
+    Store [BOX_PARAMS, label="Storage and Databases"]
+    Storage CLOUD_STORAGE()
+    SQL CLOUD_SQL()
+    BigTable CLOUD_BIGTABLE()
+    Datastore CLOUD_DATASTORE()
+    Pers PERSISTENT_DISK()
+
+    Networking [BOX_PARAMS]
+    Virtual CLOUD_VIRTUAL_NETWORK()
+    LB CLOUD_LOAD_BALANCING()
+    CDN CLOUD_CDN()
+    Interconn CLOUD_INTERCONNECT()
+    DNS CLOUD_DNS()
+
+    BigData [BOX_PARAMS, label="Big Data"]
+    BQ BIG_QUERY()
+    Datalow CLOUD_DATAFLOW()
+    Dataproc CLOUD_DATAPROC()
+    Datalab CLOUD_DATALAB()
+    PubSub CLOUD_PUBSUB()
+    Genomics GENOMICS()
+
+    ML [BOX_PARAMS, label="Machine Learning"]
+    CML CLOUD_MACHINE_LEARNING()
+    Jobs JOBS_API()
+    NLP NATURAL_LANGUAGE_API()
+    Speech SPEECH_API()
+    Trans TRANSLATION_API()
+    Vision VISION_API()
+
+    MGMT [BOX_PARAMS, label="Management Tools"]
+    Stackdriver STACKDRIVER()
+    Monitoring MONITORING()
+    Log LOGGING()
+    Err ERROR_REPORTING()
+    Trace TRACE()
+    Debug DEBUGGER()
+    Deploy DEPLOYMENT_MANAGER()
+    Endpoints CLOUD_ENDPOINTS()
+    Console CLOUD_CONSOLE()
+    Shell CLOUD_SHELL()
+    MobileApp CLOUD_MOBILE_APP()
+    Billing BILLING_API()
+    APIs CLOUD_APIS()
+
+    DevTools [BOX_PARAMS, label="Developer Tools"]
+    SDK CLOUD_SDK()
+    Git CLOUD_SOURCE_REPOSITORIES()
+    Android CLOUD_TOOLS(Cloud Tools for Android Studio)
+    IntelliJ CLOUD_TOOLS(Cloud Tools for IntelliJ)
+    PowerShell CLOUD_TOOLS(Cloud Tools for PowerShell)
+    VisualStudio CLOUD_TOOLS(Cloud Tools for Visual Studio)
+    Eclipse CLOUD_TOOLS(Google Plugin for Eclipse)
+    TestLab CLOUD_TEST_LAB()
+
+    ID [BOX_PARAMS, label="Identity & Security"]
+    IAM CLOUD_IAM()
+    ResMan CLOUD_RESOURCE_MANAGER()
+    Security CLOUD_SECURITY_SCANNER()
+
+    GCP -- Compute
+
+    Compute -- GCE
+    Compute -- GAE
+    Compute -- GKE
+    Compute -- GCR
+    Compute -- CFN
+
+    GCP -- Store
+
+    Store -- Storage
+    Store -- SQL
+    Store -- BigTable
+    Store -- Datastore
+    Store -- Pers
+
+    GCP -- Networking
+
+    Networking -- Virtual
+    Networking -- LB
+    Networking -- CDN
+    Networking -- Interconn
+    Networking -- DNS
+
+    GCP -- BigData
+
+    BigData -- BQ
+    BigData -- Datalow
+    BigData -- Dataproc
+    BigData -- Datalab
+    BigData -- PubSub
+    BigData -- Genomics
+
+    GCP -- ML
+
+    ML -- CML
+    ML -- Jobs
+    ML -- NLP
+    ML -- Speech
+    ML -- Trans
+    ML -- Vision
+
+    GCP -- MGMT
+
+    MGMT -- Stackdriver
+    MGMT -- Monitoring
+    MGMT -- Log
+    MGMT -- Err
+    MGMT -- Trace
+    MGMT -- Debug
+    MGMT -- Deploy
+    MGMT -- Endpoints
+    MGMT -- Console
+    MGMT -- Shell
+    MGMT -- MobileApp
+    MGMT -- Billing
+    MGMT -- APIs
+
+    GCP -- DevTools
+
+    DevTools -- SDK
+    DevTools -- Deploy
+    DevTools -- Git
+    DevTools -- Android
+    DevTools -- IntelliJ
+    DevTools -- PowerShell
+    DevTools -- VisualStudio
+    DevTools -- Eclipse
+    DevTools -- TestLab
+
+    GCP -- ID
+
+    ID -- IAM
+    ID -- ResMan
+    ID -- Security
+}

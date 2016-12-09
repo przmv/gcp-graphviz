@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="68px" viewBox="0 0 80 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Stackdriver-Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Stackdriver-Logo">
+            <polygon id="Shape" fill="#8CC63F" points="20.5322772 67.9069767 0.73029703 33.9534884 20.5322772 0 60.1362376 0 79.9382178 33.9534884 60.1362376 67.9069767"></polygon>
+            <polygon id="Shape" fill="#009245" points="40.1916832 33.9534884 20.5322772 67.9069767 59.8716832 67.9069767"></polygon>
+            <polygon id="Shape" fill="#006837" points="40.2019802 33.9534884 0.726336634 33.9534884 20.5322772 67.9069767"></polygon>
+            <polygon id="Shape" fill="#39B54A" points="59.8716832 0 40.1972277 33.9376961 40.1885149 33.9534884 0.727920792 33.9534884 20.529901 0"></polygon>
+            <polygon id="Shape" fill="#8CC63F" points="79.8083168 33.9534884 59.9992079 67.9069767 40.3318812 33.9534884 59.9992079 0"></polygon>
+        </g>
+    </g>
+</svg>
